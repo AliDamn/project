@@ -1,21 +1,18 @@
 "use strict"
-//alert('Hello');
-//const result =confirm('Are you cooker?');
-//console.log(result)
+const NumberOfFilms = +prompt("How many films did you see?","");
+const PersonalMovieDB = {
+    count:NumberOfFilms,
+    movies:{},
+    actors:{},
+    genres:[],
+    private:false
+};
+const a = prompt('What is the last movie did you see?',''),
+      b = prompt('How many stars you would put for this film?',''),
+      c = prompt('What is the last movie did you see?',''),
+      d = prompt('How many stars you would put for this film?','');
 
-//const answer = +prompt("Do you have 18 years old?","18");
-//console.log(answer+5);
+PersonalMovieDB.movies[a]=b;
+PersonalMovieDB.movies[c]=d;
+console.log(PersonalMovieDB);
 
-//const category = 'toys';
-//console.log("https://someulr.com/"+category)
-
-console.log(4+'-object');
-console.log(4+ +'5');
-
-let anc=10,
-    decr=10;
-
-anc++;
-decr--;
-console.log(anc);
-console.log(decr);
