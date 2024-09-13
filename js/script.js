@@ -1,4 +1,3 @@
-"use strict"
 const NumberOfFilms = +prompt("How many films did you see?","");
 const PersonalMovieDB = {
     count:NumberOfFilms,
@@ -6,13 +5,29 @@ const PersonalMovieDB = {
     actors:{},
     genres:[],
     private:false
-};
-const a = prompt('What is the last movie did you see?',''),
-      b = prompt('How many stars you would put for this film?',''),
-      c = prompt('What is the last movie did you see?',''),
-      d = prompt('How many stars you would put for this film?','');
+}
+const a = prompt('What is the last cinema did you see?'),
+      b = prompt("How many stars did you put for this film?"),
+      c = prompt('What is the last cinema did you see?'),
+      d = prompt("How many stars did you put for this film?");
 
-PersonalMovieDB.movies[a]=b;
-PersonalMovieDB.movies[c]=d;
-console.log(PersonalMovieDB);
+for (let i =0;i<2;i++){
+    const a = prompt('What is the last cinema did you see?',''),
+          b = prompt("How many stars did you put for this film?",'');
+          PersonalMovieDB.movies[a]=b;
+    if (a!=null && b!=null && a!='' && b!='' && a.length<50){
+        PersonalMovieDB[a]=b;
+        console.log("done")
+          } else{
+            console.log('error!');
+            i--;
+          }
+}
+console.log(PersonalMovieDB)
+
+
+
+
+
+
 
