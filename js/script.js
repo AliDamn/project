@@ -25,6 +25,18 @@ for (let i =0;i<2;i++){
 }
 console.log(PersonalMovieDB)
 
+if (PersonalMovieDB.count <10){
+    console.log('A few')
+} else if(PersonalMovieDB.count>=10 && PersonalMovieDB.count<=30){
+    console.log('Basic')
+} else if (PersonalMovieDB.count>30){
+    console.log('Cinema fan')
+} else {
+    console.log('Error')
+}
+
+
+
 
 
 
